@@ -1,0 +1,21 @@
+<ul class="menu">
+	<% for(var name in Nav){ %>
+		<li>
+			<a <%= RuleName.toLowerCase().indexOf(name.toLowerCase()) !== -1 ? 'class=current' :'' %> href='<%= Source_nav %><%= Nav[name].Url %>' ><%= name %>
+				<% if(Nav[name].SubNav){ %>
+					<input type="checkbox" id="subP-acc" name="acc-1">
+       				<label for="subP-acc">&dtrif;</label>
+				<% } %>
+			</a>
+			<% if(Nav[name].SubNav){ %>
+				<ul class="subMenu">
+					<% for (var subName in Nav[name].SubNav){ %>
+						<li>
+							<a href='<%= Source_nav %><%= Nav[name].SubNav[subName].Url %>' ><%= subName %></a>
+						</li>
+					<% } %>
+				</ul>
+			<% } %>
+		</li>
+	<% } %>
+</ul>

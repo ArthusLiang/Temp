@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <%- include('controls/head') %>
+      <link rel="stylesheet" type="text/css" href="<%= Source_css %>list.css" media="screen">
+  </head>
+  <body>
+  <header class="header">
+    <a href="<%= Source_nav %>index.html" class="logo"><img src="<%= Source_img %>logo.png"></a>
+    <input class="menu-btn" type="checkbox" id="menu-btn" />
+    <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+      <%- include('controls/header') %>
+  </header>
+        <div class='container'>
+            <div class="container_left"></div>
+            <div class='main'>
+             <%- include('controls/breadcrumbs') %>
+             <!-- article list below -->
+              <% for(var i in List){ %>
+              <a class="articleBlock" style="background-image: url('<%= Source_img_atricle %><%= List[i].RenderData.Cover %>');" target='_blank' href='<%= List[i].RenderData.NameHTML %>'>
+                  <div class='articleBlock_cover'>
+                      <p class='list_space'></p>
+                      <p class="list_title"><%= List[i].RenderData.Title %></p>
+                      <p class='list_item_date'><%= List[i].RenderData.Date %></p>
+                      <p class='list_item_desc'><%= List[i].RenderData.Desc %></p>
+                  </div>
+              </a>  
+                 <!-- <hr class="divider" />   -->
+              <% } %> 
+              <!-- end of list items -->    
+              <div style="clear:both;"></div>          
+              <div class='pagination'>
+               Page <%- PageFirst %><%- PagePre %><%- PageGroup %><%- PageNext %><%- PageLast %>
+              </div>    
+            </div>
+            <div class="container_left"></div>
+        </div>
+      <%- include('controls/footer') %>
+  </body>
+</html>

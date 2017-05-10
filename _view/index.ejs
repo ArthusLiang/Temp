@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <%- include('controls/head') %>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<body>
+  <!-- nav -->
+  <header class="header">
+    <a href="<%= Source_nav %>index.html" class="logo"><img src="<%= Source_img %>logo.png"></a>
+    <input class="menu-btn" type="checkbox" id="menu-btn" />
+    <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+    <%- include('controls/header') %>
+  </header>
+  <div class='container'>  
+    <!--main content -->
+    <div class="container_left"></div>
+    <div class="main"> 
+    <%- include('controls/breadcrumbs') %>
+         <!-- banner -->
+      <div class="banner"> <span>Banner here</span></div>
+      <!-- intro text -->
+      <div class="intro"><span>Welcome to the Spark prototyping site! You can find the latest prototypes and test resultes here. Get to know the team and the limitless future of Spark.</span>
+      </div>
+      <!--content blocks -->
+      <div class="block-wrapper">
+        <div class="block-l"> <a href="./prototypes/index.html"><span>Prototypes</span></a></div>
+        <div class="block-r"> <a href="./research/360°-camera-and-vr.html"><span>Research</span></a></div>
+      </div>
+      <div class="block-wrapper">
+        <div class="block-a"><a href="./team/index.html"><span>Team</span></a></div>
+      </div>
+    </div>
+    <div class="container_left"></div>
+  </div>
+  <!-- footer -->
+  </div>
+<%- include('controls/footer') %>
+</body>
+</html>

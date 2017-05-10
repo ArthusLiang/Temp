@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <%- include('controls/head') %>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<body>
+  <!-- nav -->
+  <header class="header">
+    <a href="/" class="logo"><img src="<%= Source_img %>logo.png"></a>
+    <input class="menu-btn" type="checkbox" id="menu-btn" />
+    <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+    <%- include('controls/header') %>
+  </header>
+  <div class='container'>
+    <!--main content -->
+    <div class="container_left"></div>
+    <div class="main">
+    <%- include('controls/breadcrumbs') %>
+      <!-- intro text 
+      <div class="intro"><span>Find the latest prototypes and test resultes here. Get to know the team and the limitless future of Cisco Spark.</span></div>-->
+      <!--content blocks -->
+      <div class="block-wrapper">
+        <div class="block-l"> <a href="./current/index.html"><span>Current Projects</span></a></div>
+        <div class="block-r"> <a href="#"><span>Experimental</span></a></div>
+        <div class="block-l"> <a href="#"><span>Archived</span></a></div>
+        <div class="block-r"> <a href="./guide/index.html"><span>FAQ & Troubleshoot</span></a></div>
+      </div>
+    </div>
+    <div class="container_left"></div>
+  </div>
+  <!-- footer -->
+</div>
+<%- include('controls/footer') %>
+</body>
+</html>
