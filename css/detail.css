@@ -1,0 +1,21 @@
+.article{position: relative;}
+.article_header{ height: 100px; line-height: 100px; width: 100%;}
+.article_header h1{font-weight:normal; font-size:36px; text-align: center; color: #212121; width: 100%;height: 100px; line-height: 100px;}
+
+.article_body,.article_footer{padding: 0 100px 0 150px;}
+.article_body p{color: #757575; margin-top: 14px; line-height: 21px; }
+.article_body *:first-child{margin-top: 0px;}
+.article_body pre{margin-top: 20px;}
+.article_body a{color: #07C1E4;}
+
+.article_body h1{color: black; font-size: 20px; color: #424242; height: 30px; line-height: 30px; margin-top: 30px;}
+.article_body h2{color: black; font-size: 18px; color: #616161; height: 20px; line-height: 20px; margin-top: 20px;}
+.article_body h3{color: black; font-size: 16px; color: #9E9E9E; height: 20px; line-height: 20px; margin-top: 20px;}
+
+table{margin-top: 20px;}
+
+table,td,th,tr{height: 40px; line-height: 40px; color: #333; text-align: left;}
+table{border-collapse:collapse;}
+th,tr:nth-child(even){background-color: #f8f8f8;}
+tr:nth-child(odd){background-color: #fff;}
+td,th{border:1px solid #ccc; padding: 0 14px;}
